@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>FlexStart Bootstrap Template - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+    @keyframes slide {
+      0% {
+        transform: translateX(100%);  
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  
+    h2 {
+      animation: slide 10s linear infinite;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 100%;
+}
+  </style>
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/Delta.png" alt="">
+        <!-- <span>Delta State</span> -->
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <!-- <li><a class="nav-link scrollto active" href="#hero">Home</a></li> -->
+          <li><a class="getstarted scrollto bg-success" href="#about">Check Payment</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <!-- <section id="hero" class="hero d-flex align-items-center">
+
+  <main id="main">
+
+    <!- ======= Services Section ======= -->
+</style>
+    <section id="services" class="services">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <!-- <h2>Services</h2> -->
+          <p>Payments Made Easy</p>
+          <h2 style="color: green; margin-top:2.5%; font-size: 20px; font-weight: 900;">Pay your Taxes, Rates, Fees and Levies Online</h2>
+
+        </header>
+        <div class="row gy-4">
+          <div class="col" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-box blue">
+              <i class="ri-discuss-line icon"></i>
+              <h3 style="font-size: 25px;">Pay With Payment Code</h3>
+              <p>If you have a Demand Notice or Assessment Notice</p>
+          <button style="background-color: transparent; border: none;" class="read-more" onclick="demandBtn()">
+            <span>Click Here</span> <i class="bi bi-arrow-right"></i>
+          </button> 
+            </div>
+          </div>
+
+          <div class="col" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-box orange">
+              <i class="ri-discuss-line icon"></i>
+              <h3 style="font-size: 25px;">Pay With S-TIN</h3>
+              <p>Or if you have a State Tax Identification Number (S-TIN)</p>
+              <button style="background-color: transparent; border: none;" class="read-more" onclick="stinBtn()">
+                <span>Click Here</span> <i class="bi bi-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="col" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-box green">
+              <i class="ri-discuss-line icon"></i>
+              <p style="font-size: 30px; font-weight: 550;">Otherwise...</p>
+              <button style="background-color: transparent; border: none;" class="read-more" onclick="otherBtn()">
+                <span>Click Here</span> <i class="bi bi-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+          <div class="justify-content-center">
+            <button type="button" class="check-button align-content-center bg-success" data-bs-toggle="modal" data-bs-target="#exa">Check Payment</button>
+
+                                            <!-- Modal -->
+<div class="modal fade" id="exa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <input class="form-control" data-inputmask="'alias': 'datetime'" data-inputmask-inputformat="dd/mm/yyyy HH:MM:ss"/>
+        <p class="query">Check your email for your trans. ref no.</p>
+      </div>
+
+      <div class="modal-footer">
+        <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+        <button type="button" class="btn btn-primary">Query</button>
+      </div>
+    </div>
+  </div>
+</div>
+          </div>
+
+        </div> 
+    </section><!-- End Services Section -->
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Payment Options</h2>
+        </header>
+
+        <div class="clients-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="assets/img/Mastercard.webp" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/verve.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/visa.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/xpress.png" class="img-fluid" alt=""></div>
+            <!-- <div class="swiper-slide"><img src="assets/img/verve.png" class="img-fluid" alt=""></div> -->
+          </div>
+          <!-- <div class="swiper-pagination"></div> -->
+        </div>
+      </div>
+
+    </section><!-- End Clients Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Contact</h2>
+          <p>Contact Us</p>
+        </header>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-12">
+
+            <div class="row gy-4">
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-geo-alt"></i>
+                  <h3>Address</h3>
+                  <p>A108 Adam Street,<br>New York, NY 535022</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-telephone"></i>
+                  <h3>Call Us</h3>
+                  <p>090-456-606-63</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-envelope"></i>
+                  <h3>Email Us</h3>
+                  <p>customercare@icmaservices.com</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-clock"></i>
+                  <h3>Open Hours</h3>
+                  <p>Monday - Friday<br>9:00AM - 05:00PM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- End Contact Section -->
+
+
+    
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <!-- <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-12 footer-info">
+            <h4>Have a question or need help?</h4>
+          </div>
+
+          <div class="col-lg-4 col-md-12 footer-info">
+            <h4>kindly send to this email :</h4>
+          </div>
+
+          <div class="col-lg-4 col-md-12 footer-info">
+            <h4>customercare@icmaservices.com</h4>
+          </div>
+
+          <div class="text-center">
+            <h4>090-456-606-63</h4>
+          </div>
+
+        </div>
+      </div>
+    </div> -->
+
+
+    <div class="container">
+      <div class="copyright">
+        <script language="javascript">
+          today = new Date();
+          y0 = today.getFullYear();
+      </script>
+
+      2017-
+      <script language="javascript">
+          document.write(y0);
+      </script>. All rights Reserved &reg;
+
+      </div>
+      <div class="credits">
+        | A Product of <strong style="color: green">REEMS</strong> Powered by <u><a style="color: green" href="http://icmaservices.com" target="_blank">ICMA PROFESSIONAL SERVICES.</a></u> |
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+                        <!-- BEGINNING OF MODAL -->
+
+          <!-- PAYMENT CODE Modal FOR SEARCH -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Pay with Payment Code</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form id="form">
+                  <input type="text" name="paymentcode" id="paycode" placeholder="Enter payment code"
+                   style="width: 70%; margin-left: 15%; font-size:13px; padding: 8px;
+                   border: 1px solid #0d6efd; border-radius: 5px; outline: none;">
+                </div>
+                <div class="modal-footer">
+                  <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                  <button type="button" class="btn btn-primary" style="border-radius: 10px; font-size: 14px;" id="search">
+                    <i class="bi bi-search" style="font-size:14px; margin-right: 2px;"></i> Search</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+            <!-- S-TIN Modal FOR SEARCH -->
+            <div class="modal fade" id="stinModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Pay with S-TIN</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <input type="text" name="stateid" id="stin" placeholder="Enter Value stin"
+                     style="width: 70%; margin-left: 15%; font-size:13px; padding: 8px;
+                     border: 1px solid #0d6efd; border-radius: 5px; outline: none;">
+                  </div>
+                  <form id="get">
+                  <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                    <button type="button" class="btn btn-primary" id="searchh">
+                      <i class="bi bi-search" style="font-size:14px; margin-right: 2px;"></i> Search</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          <!--PAYMENT CODE Modal FOR FORM-->
+          <div class="modal fade" id="staticB" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header" style="background-color: #2db6fa; color:#fff;">
+                  <h5 class="modal-title" id="staticB" style="font-size: 16px; font-weight: 700;">Please provide the details below for your Receipt:</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="row g-0">
+                    <div class="col-sm-6 col-md-12" style="font-size: small;">
+                      <!-- Total Assessed -->
+                      <h6>Total Assesed Amount (<i class='fa-solid fa-naira-sign' style="font-size: small;"></i>) 
+                        <span style="color:red">*</span>
+                      </h6>
+                      <h6 class="">500,000</h6>
+          
+                        <div class="row">
+                        <div class="col">
+                          <!-- Amount -->
+                          <label class="form-label">Amount (<i class='fa-solid fa-naira-sign' style="font-size: small;"></i>)
+                            <span style="color:red">*</span> :</label>
+                            <input class="form-control" data-inputmask="'alias': 'datetime'" data-inputmask-inputformat="dd/mm/yyyy"/>
+                        </div>
+          
+                        <div class="col">
+                         <!-- Surname -->
+                         <label class="form-label">Surname or Company name<span style="color:red">*</span> :</label>
+                         <input class="form-control" data-inputmask="'alias': 'datetime'" data-inputmask-inputformat="dd/mm/yyyy HH:MM:ss"/>
+                        </div>
+                      </div>
+
+                          <div class="row">
+                        <div class="col">
+                          <!-- Revenue -->
+                          <label class="form-label" style="margin-top: 3%;">Revenue<span style="color:red">*</span>:</label>
+                          <input class="form-control" data-inputmask="'alias': 'datetime'" data-inputmask-placeholder="*" placeholder="Ecological Fees" disabled />
+                        </div>
+          
+                        <div class="col">
+                          <!-- Country -->
+                          <label class="form-label" style="margin-top: 3%;">Country <span style="color:red">*</span> :</label>
+                          <input class="form-control mb-4 mb-md-0" data-inputmask-alias="(+99) 9999-9999"/>
+                        </div>
+                      </div>
+          
+                          <div class="row">
+                        <div class="col">
+                           <!-- Other Names -->
+                           <label class="form-label" style="margin-top: 3%;">Other Names:</label>
+                           <input class="form-control" disabled/>
+                        </div>
+          
+                        <div class="col">
+                          <!-- City -->
+                          <label class="form-label" style="margin-top: 3%;">City<span style="color:red">*</span> :</label>
+                          <input class="form-control mb-4 mb-md-0" data-inputmask="'alias': 'currency', 'prefix':'$'"/>
+                        </div>
+                      </div>
+          
+                        <div class="row">
+                        <div class="col">
+                          <!-- Area -->
+                          <label class="form-label" style="margin-top: 3%;">Area:</label>
+                            <input class="form-control" />
+                        </div>
+          
+                        <div class="col">
+                          <!-- Telephone -->
+                          <label class="form-label" style="margin-top: 3%;">Telephone<span style="color:red">*</span> :</label>
+                            <input class="form-control mb-4 mb-md-0" data-inputmask="'alias': 'email'" />
+                        </div>
+                      </div>
+          
+                        <div class="row">
+                        <div class="col">
+                          <!-- State/Country -->
+                          <label class="form-label" style="margin-top: 3%;">State<span style="color:red">*</span>:</label>
+                            <input class="form-control" placeholder="Delta State" />
+                        </div>
+          
+                        <div class="col">
+                          <!-- Email -->
+                          <label class="form-label" style="margin-top: 3%;">Email<span style="color:red">*</span> :</label>
+                            <input class="form-control mb-4 mb-md-0"  data-inputmask="'alias': 'email'" placeholder=""/>
+                        </div>
+                      </div>
+          
+                      <div class="row">
+                        <div class="col">
+                          <!-- LGA -->
+                          <label class="form-label" style="margin-top: 3%;">LGA<span style="color:red">*</span>:</label>
+                            <input class="form-control" data-inputmask="'alias': 'ip'"/>
+                        </div>
+          
+                        <div class="col">
+                          <!-- Payment Period -->
+                          <label class="form-label" style="margin-top: 3%;">Payment Period:</label>
+                            <input class="form-control mb-4 mb-md-0" style="font-size: small;" data-inputmask="'alias': 'email'" placeholder="" />
+                        </div>
+                      </div>
+          
+                      <div class="row">
+                        <div class="col-12">
+                          <!-- Street No & Street Name -->
+                          <label class="form-label" style="margin-top: 3%;">Street No & Street Name<span style="color:red">*</span>:</label>
+                          <textarea class="form-control" aria-label="With textarea" rows="4" cols="10"></textarea>
+
+                        </div>
+                      </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                  <button type="button" class="btn btn-success" onclick="exampleModalHide()" style="border-radius: 15px; font-size:14px;">
+                    <i class="bi bi-eye" style="margin-right: 2px;"></i>Review Entries</button>
+                </div>
+              </div>
+            </div>
+          </div>
+            
+          <!--STIN CODE Modal FOR FORM-->
+          <div class="modal fade" id="staticSTIN" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header" style="background-color: #f68c09; color:#fff;">
+                  <h5 class="modal-title" id="staticSTIN" style="font-size: 16px; font-weight: 700;">Please provide the details below for your Receipt:</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="row g-0">
+                    <div class="col-sm-6 col-md-12" style="font-size: small;">
+                      <!-- Total Assessed -->
+                      <h6>Total Assesed Amount (<i class='fa-solid fa-naira-sign' style="font-size: small;"></i>) 
+                        <span style="color:red">*</span></h6>
+                          <h6 class="">500,000</h6>
+          
+                        <div class="row">
+                        <div class="col">
+                          <!-- Amount -->
+                          <label class="form-label">Amount (<i class='fa-solid fa-naira-sign' style="font-size: small;"></i>)
+                            <span style="color:red">*</span> :</label>
+                            <input class="form-control mb-4 mb-md-0" data-inputmask="'alias': 'datetime'" data-inputmask-inputformat="dd/mm/yyyy"/>
+                        </div>
+          
+                        <div class="col">
+                          <!-- Surname -->
+                          <label class="form-label">Surname or Company name<span style="color:red">*</span> :</label>
+                          <input class="form-control mb-4 mb-md-0" data-inputmask="'alias': 'datetime'" data-inputmask-inputformat="dd/mm/yyyy HH:MM:ss"/>
+                        </div>
+                      </div>
+                          <div class="row">
+                        <div class="col">
+                          <!-- Revenue -->
+                          <label class="form-label" style="margin-top: 3%;">Revenue<span style="color:red">*</span>:</label>
+                          <input class="form-control" data-inputmask="'alias': 'datetime'" data-inputmask-placeholder="*" placeholder="Ecological Fees" disabled />
+                        </div>
+          
+                        <div class="col">
+                          <!-- Country -->
+                          <label class="form-label" style="margin-top: 3%;">Country <span style="color:red">*</span> :</label>
+                          <input class="form-control mb-4 mb-md-0" data-inputmask-alias="(+99) 9999-9999"/>
+                        </div>
+                      </div>
+              
+                          <div class="row">
+                        <div class="col">
+                           <!-- Other Names -->
+                           <label class="form-label" style="margin-top: 3%;">Other Names:</label>
+                           <input class="form-control" disabled/>
+                        </div>
+          
+                        <div class="col">
+                          <!-- City -->
+                          <label class="form-label" style="margin-top: 3%;">City<span style="color:red">*</span> :</label>
+                          <input class="form-control mb-4 mb-md-0" data-inputmask="'alias': 'currency', 'prefix':'$'"/>
+                        </div>
+                      </div>
+          
+                        <div class="row">
+                        <div class="col">
+                          <!-- Area -->
+                          <label class="form-label" style="margin-top: 3%;">Area:</label>
+                            <input class="form-control" />
+                        </div>
+          
+                        <div class="col">
+                          <!-- Telephone -->
+                          <label class="form-label" style="margin-top: 3%;">Telephone<span style="color:red">*</span> :</label>
+                            <input class="form-control mb-4 mb-md-0" data-inputmask="'alias': 'email'" />
+                        </div>
+                      </div>
+          
+                        <div class="row">
+                        <div class="col">
+                          <!-- State/Country -->
+                          <label class="form-label" style="margin-top: 3%;">State<span style="color:red">*</span>:</label>
+                            <input class="form-control" placeholder="Delta State" />
+                        </div>
+          
+                        <div class="col">
+                          <!-- Email -->
+                          <label class="form-label" style="margin-top: 3%;">Email<span style="color:red">*</span> :</label>
+                            <input class="form-control mb-4 mb-md-0"  data-inputmask="'alias': 'email'" placeholder=""/>
+                        </div>
+                      </div>
+          
+                      <div class="row">
+                        <div class="col">
+                          <!-- LGA -->
+                          <label class="form-label" style="margin-top: 3%;">LGA<span style="color:red">*</span>:</label>
+                            <input class="form-control" data-inputmask="'alias': 'ip'"/>
+                        </div>
+          
+                        <div class="col">
+                          <!-- Payment Period -->
+                          <label class="form-label" style="margin-top: 3%;">Payment Period:</label>
+                            <input class="form-control mb-4 mb-md-0" style="font-size: small;" data-inputmask="'alias': 'email'" placeholder="" />
+                        </div>
+                      </div>
+          
+                      <div class="row">
+                        <div class="col-12">
+                          <!-- Street No and Street Name -->
+                          <label class="form-label" style="margin-top: 3%;">Street No and Street Name<span style="color:red">*</span>:</label>
+                          <textarea class="form-control" aria-label="With textarea" rows="4" cols="10"></textarea>
+                        </div>
+                      </div>
+          
+                      </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                  <button type="button" class="btn btn-success" onclick="staticModalHide()" style="border-radius: 15px; font-size:14px;"><i class="bi bi-eye" style="margin-right: 2px;"></i>Review Entries</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+           <!-- STIN CODE Modal FOR CONFIRMATION -->
+          <div class="modal fade" id="boost" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title" id="boost">Payment Confirmation Page<br>
+          <span style="font-size:medium;">Please ensure you verify all information correctly before clicking the "Proceed to Payment" Button.</span></h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="font-size: small;">
+        <form class="form" id="form">
+          <div class="row g-3">
+              <div class="col-12">
+                  <label class="form-label" for="total-assessed">Total Assesed Amount (<i class='fa-solid fa-naira-sign' style="font-size: small;"></i>) <span style="color:red">*</span></label>
+                  <input type="number" id="total-assessed" class="form-control" style="font-size: small;" placeholder="500,000" />
+                 
+              </div>
+
+              <div class="col-12">
+                  <label class="form-label" for="amount">Amount Entered (<i class='fa-solid fa-naira-sign' style="font-size: small;"></i>)   <span style="color:red">*</span></label>
+                  <input type="number" id="amount" class="form-control" style="font-size: small;"  placeholder="10" />
+                
+              </div>
+
+              <div class="col-12">
+                  <label class="form-label" for="agency">Agency Name <span style="color:red">*</span></label>
+                  <input type="text" id="agency" class="form-control" style="font-size: small;" placeholder="MINISTRY OF ENVIRONMENT" />
+              </div>
+
+              <div class="col-12 ">
+                  <label class="form-label" for="revenue">Revenue Name <span style="color:red">*</span></label>
+                  <input type="text" id="revenue" class="form-control" style="font-size: small;" placeholder="ECOLOGICAL FEES" />
+              </div>
+
+              <div class="col-12 ">
+                  <label class="form-label" for="confirmpassword">Surname <span style="color:red">*</span></label>
+                  <input type="text" id="confirmpassword" class="form-control" style="font-size: small;" placeholder="AGEN ALUMNINIUM INDUSTRY (ASABA OFFICE)" />
+              </div>
+
+              <div class="col-12 ">
+                  <label class="form-label" for="other">Other Names: <span style="color:red">*</span></label>
+                  <input type="text" id="other" class="form-control" placeholder="" />
+              </div>
+
+              <div class="col-12 ">
+                  <label class="form-label" for="country">Country  <span style="color:red">*</span></label>
+                  <input type="text" id="country" class="form-control" style="font-size: small;" placeholder="Nigeria" />
+              </div>
+
+              <div class="col-12 ">
+                  <label class="form-label" for="state">State  <span style="color:red">*</span></label>
+                  <input type="text" id="state" class="form-control" style="font-size: small;" placeholder="Delta State" />
+              </div>
+
+              <div class="col-12 ">
+                  <label class="form-label" for="city">City  <span style="color:red">*</span></label>
+                  <input type="text" id="city" class="form-control" style="font-size: small;" placeholder="Warri" />
+              </div>
+
+              <div class="col-12 ">
+                  <label class="form-label" for="area">Area  <span style="color:red">*</span></label>
+                  <input type="text" id="area" class="form-control" style="font-size: small;" placeholder="Warri" />
+              </div>
+
+              <div class="col-12 ">
+                  <label class="form-label" for="address">Address  <span style="color:red">*</span></label>
+                  <textarea class="form-control" id="address" style="font-size: small;" rows="3" placeholder="23,Oba Akinjobi Way"></textarea>
+              </div>
+
+              <div class="col-12 ">
+                  <label class="form-label" for="lga">L.G.A  <span style="color:red">*</span></label>
+                  <input type="text" id="lga" class="form-control" style="font-size: small;" placeholder="IKA NORTH EAST" />
+              </div>
+
+              <div class="col-12 ">
+                  <label class="form-label" for="email">Email Address  <span style="color:red">*</span></label>
+                  <input type="email" id="email" class="form-control" style="font-size: small;" placeholder="John@gmail.com" />
+              </div>
+
+              <div class="col-12 ">
+                  <label class="form-label" for="telephone">Telephone  <span style="color:red">*</span></label>
+                  <input type="text" id="telephone" class="form-control" style="font-size: small;" placeholder="08033920345" />
+              </div>
+
+              <div class="col-12 ">
+                  <label class="form-label" for="pp">Payment Period  <span style="color:red">*</span></label>
+                  <input type="date" id="pp" class="form-control" placeholder="" />
+              </div>
+            </div>
+            </form>
+       </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" style="border-radius: 15px; font-size: 14px;" data-bs-dismiss="modal">
+          <i class="bi bi-trash3"></i>Cancel</button>
+        <button type="button" class="btn btn-success" style="border-radius: 15px; font-size: 14px;">
+          <i class="bi bi-check-circle-fill" style="margin-right: 2px;"></i>Proceed to Payment</button>
+      </div>
+    </div>
+  </div>
+          </div>
+
+          <!-- PAYMENT CODE Modal FOR CONFIRMATION -->
+          <div class="modal fade" id="example" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title" id="example">Payment Confirmation Page<br>
+          <span style="font-size:medium;">Please ensure you verify all information correctly before clicking the "Proceed to Payment" Button.</span></h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="font-size: small;">
+        <form class="form" id="form">
+          <div class="row g-3">
+              <div class="col-12">
+                  <label class="form-label" for="total-assessed">Total Assesed Amount (<i class='fa-solid fa-naira-sign' style="font-size: small;"></i>) <span style="color:red">*</span></label>
+                  <input type="number" id="total-assessed" class="form-control" style="font-size: small;" placeholder="500,000" />
+                 
+              </div>
+
+              <div class="col-12">
+                  <label class="form-label" for="amount">Amount Entered (<i class='fa-solid fa-naira-sign' style="font-size: small;"></i>)   <span style="color:red">*</span></label>
+                  <input type="number" id="amount" class="form-control" style="font-size: small;"  placeholder="10" />
+                
+              </div>
+
+              <div class="col-12">
+                  <label class="form-label" for="agency">Agency Name <span style="color:red">*</span></label>
+                  <input type="text" id="agency" class="form-control" style="font-size: small;" placeholder="MINISTRY OF ENVIRONMENT" />
+              </div>
+
+              <div class="col-12 ">
+                  <label class="form-label" for="revenue">Revenue Name <span style="color:red">*</span></label>
+                  <input type="text" id="revenue" class="form-control" style="font-size: small;" placeholder="ECOLOGICAL FEES" />
+              </div>
+
+              <div class="col-12 ">
+                  <label class="form-label" for="confirmpassword">Surname <span style="color:red">*</span></label>
+                  <input type="text" id="confirmpassword" class="form-control" style="font-size: small;" placeholder="AGEN ALUMNINIUM INDUSTRY (ASABA OFFICE)" />
+              </div>
+
+              <div class="col-12 ">
+                  <label class="form-label" for="other">Other Names: <span style="color:red">*</span></label>
+                  <input type="text" id="other" class="form-control" placeholder="" />
+              </div>
+
+              <div class="col-12 ">
+                  <label class="form-label" for="country">Country  <span style="color:red">*</span></label>
+                  <input type="text" id="country" class="form-control" style="font-size: small;" placeholder="Nigeria" />
+              </div>
+
+              <div class="col-12 ">
+                  <label class="form-label" for="state">State  <span style="color:red">*</span></label>
+                  <input type="text" id="state" class="form-control" style="font-size: small;" placeholder="Delta State" />
+              </div>
+
+              <div class="col-12 ">
+                  <label class="form-label" for="city">City  <span style="color:red">*</span></label>
+                  <input type="text" id="city" class="form-control" style="font-size: small;" placeholder="Warri" />
+              </div>
+
+              <div class="col-12 ">
+                  <label class="form-label" for="area">Area  <span style="color:red">*</span></label>
+                  <input type="text" id="area" class="form-control" style="font-size: small;" placeholder="Warri" />
+              </div>
+
+              <div class="col-12 ">
+                  <label class="form-label" for="address">Address  <span style="color:red">*</span></label>
+                  <textarea class="form-control" id="address" style="font-size: small;" rows="3" placeholder="23,Oba Akinjobi Way"></textarea>
+              </div>
+
+              <div class="col-12 ">
+                  <label class="form-label" for="lga">L.G.A  <span style="color:red">*</span></label>
+                  <input type="text" id="lga" class="form-control" style="font-size: small;" placeholder="IKA NORTH EAST" />
+              </div>
+
+              <div class="col-12 ">
+                  <label class="form-label" for="email">Email Address  <span style="color:red">*</span></label>
+                  <input type="email" id="email" class="form-control" style="font-size: small;" placeholder="John@gmail.com" />
+              </div>
+
+              <div class="col-12 ">
+                  <label class="form-label" for="telephone">Telephone  <span style="color:red">*</span></label>
+                  <input type="text" id="telephone" class="form-control" style="font-size: small;" placeholder="08033920345" />
+              </div>
+
+              <div class="col-12 ">
+                  <label class="form-label" for="pp">Payment Period  <span style="color:red">*</span></label>
+                  <input type="date" id="pp" class="form-control" placeholder="" />
+              </div>
+            </form>
+       </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" style="border-radius: 15px; font-size: 14px;" data-bs-dismiss="modal" onclick="cancelBtn()">
+          <i class="bi bi-trash3"></i>Cancel</button>
+        <button type="button" class="btn btn-success" style="border-radius: 15px; font-size: 14px;" onclick="proceedBtn()">
+          <i class="bi bi-check-circle-fill" style="margin-right: 2px;"></i>Proceed to Payment</button>
+      </div>
+    </div>
+  </div>
+          </div>
+
+         <!-- OTHERWISE Modal FOR SEARCH -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Pay with Payment Code</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form id="form">
+            <input type="text" name="paymentcode" id="paycode" placeholder="Enter payment code"
+             style="width: 70%; margin-left: 15%; font-size:13px; padding: 8px;
+             border: 1px solid #0d6efd; border-radius: 5px; outline: none;">
+          </div>
+          <div class="modal-footer">
+            <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+            <button type="button" class="btn btn-primary" style="border-radius: 10px; font-size: 14px;" id="search">
+              <i class="bi bi-search" style="font-size:14px; margin-right: 2px;"></i> Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+        </div>
+    
+    
+
+
+
+          
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src=“https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js”></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+
+  <script>
+    function proceedBtn() {
+  Swal.fire({
+title: "Are you sure?",
+text: "A Transaction Ref:No will be sent to your entered mail to query transaction status. Do you want to continue?",
+icon: "warning",
+buttons: true,
+dangerMode: true,
+buttons: ["No, cancel it!", "Yes, I'm Sure"],
+});
+}
+
+function cancelBtn() {
+Swal.fire({
+title: "",
+text: "Congrats! Your selected record is still safe.",
+icon: "success",
+buttons: true,
+});
+}
+
+function demandBtn() {
+Swal.fire({
+  title: 'Please Note:-',
+  text: "Payments made with either Demand/Assessment Notice or by supplying your State Identification Number (S-TIN) will immediately reflect in your account with the State Government. Payments made without providing any of the above will require manual reconcilliation before it can reflect in your account with the State Government.",
+  icon: 'warning',
+  showCancelButton: true,
+  cancelButtonColor: '#d33',
+  confirmButtonColor: '#008000',
+  confirmButtonText: 'Continue'
+}).then((result) => {
+  if (result.isConfirmed) {
+    $('#exampleModal').modal('show');
+  }
+})
+}
+function stinBtn() {
+Swal.fire({
+  title: 'Please Note:-',
+  text: "Payments made with either Demand/Assessment Notice or by supplying your State Identification Number (S-TIN) will immediately reflect in your account with the State Government. Payments made without providing any of the above will require manual reconcilliation before it can reflect in your account with the State Government.",
+  icon: 'warning',
+  showCancelButton: true,
+  cancelButtonColor: '#d33',
+  confirmButtonColor: '#008000',
+  confirmButtonText: 'Continue'
+}).then((result) => {
+  if (result.isConfirmed) {
+    $('#stinModal').modal('show');
+  }
+})
+}
+
+function otherBtn() {
+Swal.fire({
+  title: 'Please Note:-',
+  text: "Payments made with either Demand/Assessment Notice or by supplying your State Identification Number (S-TIN) will immediately reflect in your account with the State Government. Payments made without providing any of the above will require manual reconcilliation before it can reflect in your account with the State Government.",
+  icon: 'warning',
+  showCancelButton: true,
+  cancelButtonColor: '#d33',
+  confirmButtonColor: '#008000',
+  confirmButtonText: 'Continue'
+}).then((result) => {
+  if (result.isConfirmed) {
+    $('#exampleModal').modal('show');
+  }
+})
+}
+
+function staticModalHide() {
+  $('#staticSTIN').modal('hide');
+  $('#boost').modal('show');
+}
+
+function exampleModalHide() {
+  $('#staticB').modal('hide');
+  $('#example').modal('show');
+}
+
+// PAYMENT CODE VALIDATION
+$("#search").click(function(e) {
+  e.preventDefault();
+  const paycode = $("#paycode").val();
+  $("#paycode").css('border-color','Red');
+
+  if(paycode == "" ) {
+    Swal.fire({
+  icon: 'error',
+  title: 'Oops...',
+  text: 'Field cannot be empty!',
+  // footer: '<a href="">Why do I have this issue?</a>'
+})
+
+  } else {
+    $("#paycode").css('border-color','Green');
+
+    $('#staticB').modal('show');
+
+  }
+})
+
+// STIN CODE VALIDATION
+$("#searchh").click(function(e) {
+  e.preventDefault();
+  const stin = $("#stin").val();
+  $("#stin").css('border-color','Red');
+
+  if(stin == "" ) {
+    Swal.fire({
+  icon: 'error',
+  title: 'Oops...',
+  text: 'Field cannot be empty!',
+  // footer: '<a href="">Why do I have this issue?</a>'
+    })
+
+  } else {
+    $("#stin").css('border-color','Green');
+
+    $('#staticSTIN').modal('show');
+
+  }
+})
+
+
+</script>
+</body>
+
+</html>
